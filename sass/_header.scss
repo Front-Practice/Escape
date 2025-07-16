@@ -1,0 +1,51 @@
+.header{
+    border-bottom: 1px solid gray;
+    background: $bg-py;
+}
+.navbar{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    &__collection{
+        display: flex;
+        gap: 30px;
+    }
+    &__item{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: black;
+            &:hover{
+                color: red;
+            }
+            &:active{
+                color: gold;
+            }
+        }
+    }
+    &__menu{
+        display: none;
+        div{
+            width: 30px;
+            height: 3px;
+            background: black;
+            margin: 3px 0;
+            border-radius: 4px;
+        }
+    }
+}
+
+
+@media (max-width:990px) {
+   .navbar{
+    padding: 0 16px;
+    &__collection{
+        display: none;
+    }
+    &__menu{
+        display: block;
+    }
+   }
+}
+

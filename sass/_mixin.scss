@@ -1,0 +1,16 @@
+
+@mixin btn($rang: blue, $size:16px){
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: $rang;
+    color: white;
+    font-size:$size ;
+}
+
+@mixin df($ps: center){
+    display: flex;
+    align-items: center;
+    justify-content: $ps;
+}
+
